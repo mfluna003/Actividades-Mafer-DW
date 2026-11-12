@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un 
+documento de HTML-->
+
+<html lang="es"> <!--Aqui  inicia mi pagina con la etiqueta de html-->
+<head><!-- Aqui en el head esta todo lo que no es visible en la pagina pero lo hace funcional-->
+  <!-- Con los metadatos puedo colocar caracteres especial, dar información al SEO para posicionamiento web-->
+   <meta charset="UTF-8"><!--Permite caracteres especiales-->
+  <meta name="description" content="Musical Indie folk">
+  <meta name="author" content="Maria Luna">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
 <title>Musical Mafe</title>
 </head>
 <body>
 
-<h1>Musical Mafe</h1>
-<p>Escucha mis 3 canciones de POP</p>
+ <div class="container-musical">
+   <img src="imagen1.jpg" alt="Imagen de musica Indie" class="imagen-portada">
+
+   <h1>Musical Mafe</h1>
+   <p class="pmusical">Escucha mis 3 musica indie folk</p>
+
+     <div class="lista-canciones">
+        <!--CANCION 1-->
+        <div class="cancion1">
+          <p>1. Call your mom - Noah Kahan</p>
+            <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Call Your Mom.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+        <!--CANCION 2-->
+        <div class="cancion2">
+          <p>2. Orbiter - Noah kahan</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Orbiter.mp3" type="audio/mpeg">
+                </audio>
+     </div>
+
+     <!--CANCION 3-->
+        <div class="cancion3">
+          <p>2. She Calls Me Back - Noah kahan</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="She Calls Me Back.mp3" type="audio/mpeg">
+                </audio>
+     </div>
+
+ </div>
 
 </body>
 </html>
