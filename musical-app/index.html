@@ -18,40 +18,61 @@ documento de HTML-->
 <body>
 
  <div class="container-musical">
-   <img src="imagen1.jpg" alt="Imagen de musica Indie" class="imagen-portada">
+   <img src="Noah kahan 2.webp" alt="Imagen de musica Indie" class="imagen-portada">
 
    <h1>Musical Mafe</h1>
-   <p class="pmusical">Escucha mis 3 musica indie folk</p>
+   <p class="pmusical">Mi top 3 canciones favoritas de Noah Kahan
 
-     <div class="lista-canciones">
+  <!-- 
+    <div class="lista-canciones">-->
         <!--CANCION 1-->
-        <div class="cancion1">
-          <p>1. Call your mom - Noah Kahan</p>
-            <audio controls class="audio-player">
+        <!-- <div class="cancion1"> -->
+          <!-- <p> Call your mom </p>
+            <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Call Your Mom.mp3" type="audio/mpeg">
-                </audio>
-        </div>
-
+                  <!--   <source src="Call Your Mom.mp3" type="audio/mpeg"> -->
+             <!--    </audio>
+        </div>-->
         <!--CANCION 2-->
-        <div class="cancion2">
-          <p>2. Orbiter - Noah kahan</p>
-          <audio controls class="audio-player">
+        <!-- <div class="cancion2"> -->
+         <!--  <p> Orbiter </p> -->
+         <!--  <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Orbiter.mp3" type="audio/mpeg">
+                  <!--   <source src="Orbiter.mp3" type="audio/mpeg">
                 </audio>
-     </div>
+     </div> -->
 
      <!--CANCION 3-->
-        <div class="cancion3">
-          <p>2. She Calls Me Back - Noah kahan</p>
-          <audio controls class="audio-player">
+        <!-- <div class="cancion3">
+          <p> She Calls Me Back </p>
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="She Calls Me Back.mp3" type="audio/mpeg">
+                  <!--   <source src="She Calls Me Back.mp3" type="audio/mpeg">
                 </audio>
-     </div>
+     </div> 
+    </div> -->
+    <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">Call Your Mom</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="Call Your Mom.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>
+
 
  </div>
 
+
+<script src="script.js"></script>
 </body>
 </html>

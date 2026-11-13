@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
-    background: linear-gradient(135deg, #16b31bc2, #19ba34);
+    background: linear-gradient(135deg, #464909c2, #19ba34);
     font-family: "Playfair Display", serif;
     padding: 20px; 
 }
@@ -55,4 +55,35 @@ p{
     background-color: #f8f9faa3; /* Un gris muuuy clarito */
     padding: 10px;
     border-radius: 10px;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.controles button {
+    background-color: #286b0c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.controles button:hover {
+    background-color: #cd4c01;
 }
